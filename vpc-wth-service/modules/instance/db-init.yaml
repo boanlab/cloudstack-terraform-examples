@@ -1,0 +1,6 @@
+#cloud-config
+packages:
+  - mysql-server
+runcmd:
+  - systemctl enable mysql
+  - systemctl start mysql
